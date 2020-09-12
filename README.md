@@ -1,5 +1,3 @@
-# tutti-fruity
+#Masters project guide
 
-Consider this a documentation of my attempt to learn how to code better
-
-Hopefully this will include Matlab and Python scripts. You know, maybe
+This is just a collection of thoughts that I wish I'd had before starting working on seminar papers and presentations for my masters. I take no credit (blame) for the good (bad) advice herein. Feel free to contact me with questions or feedback
