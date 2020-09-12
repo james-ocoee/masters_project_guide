@@ -1,0 +1,129 @@
+\documentclass[a4paper, 12pt, oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{marvosym}
+\usepackage{lmodern}
+\usepackage[left=4cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{setspace}				%Zeilenabstände
+\usepackage{fancyhdr}				%Kopf- und Fußzeile
+\usepackage[bottom,hang]{footmisc}	%Formatierung Fußnoten
+\usepackage[T1]{fontenc}			%automatische Silbentrennung von Worten mit Umlauten
+\usepackage[english]{babel}			%Neue Rechtschreibung
+\usepackage{amsmath}				%LATEX-Mathematik-Formatierungen und -Symbole
+\usepackage{amssymb}				%LATEX-Mathematik-Formatierungen und -Symbole
+\usepackage{amsfonts}				%LATEX-Mathematik-Formatierungen und -Symbole
+\usepackage{dsfont} 				%für Mengensymbole
+\usepackage{indentfirst}
+\usepackage[round]{natbib}			%Zitiermethode für BibTeX
+\bibliographystyle{agsm}
+\usepackage{url}					%Internet-Adressen im Literaturverzeichnis zitieren
+\usepackage{graphicx}				%Einbindung von Graphiken
+\graphicspath{{./graphics/}}        %where you keep your graphics
+\usepackage{tocloft}				%means of controlling the typographic design 
+%of the Table of Contents, List of Figures and List of Tables
+\usepackage[bf,hang,nooneline,justification=centering]{caption}
+\renewcommand{\captionfont}{\small\itshape}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage[printonlyused,withpage]{acronym}
+\usepackage[titletoc,title]{appendix}
+\usepackage{afterpage}
+\frenchspacing						%no space after the period
+%Title page
+\author{James Donahue}
+\title{Modeling monetary policy shocks within a monetary union}
+%\supervisor{Prof. Dr. Olaf Posch}
+\begin{document}
+%\parindent 0cm	
+\onehalfspacing
+
+%%%% Titelblatt
+\thispagestyle{empty}
+\begin{titlepage}
+	\begin{center}
+		\vspace*{\fill}
+%		\begin{figure}
+%			\centering
+%			\includegraphics[width=12cm]{uhh_logo}
+%		\end{figure}
+		{\Large Universität Hamburg}
+		\vfill
+		{\Huge Modeling monetary policy shocks within a monetary union }\\ 
+		\hfill \break
+%		{\Large An empirical analysis}\\ % zweiter Teil des Titels
+		\vfill
+		Master's of Science in Economics \\
+		Supervisor: Prof. Dr. Olaf Posch \\ 
+%		\vfill
+%		Masterarbeit \\
+		\textit{26 February 2020}
+		\vfill
+	\end{center}
+	\vfill
+	Author: James Donahue \\ 
+	Vogelhüttendeich 114 \\ 
+	21107 Hamburg DE \\ 
+%	Fachrichtung:  \\ 
+	Matrikelnummer: 7017158\\[2mm]
+%	( Advisor: Prof. Dr. Olaf Posch ) \\ 
+%	( Zweitgutachter: )	% bei Bachelor-/Master-/Diplomarbeit bitte angeben, ansonsten weglassen
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{Logo_Fakultaet2_WiSo_rgb}
+	\end{center}
+%\afterpage{\null\newpage\thispagestyle{empty}}
+\end{titlepage}
+
+%Formatierung im Abbildungsverzeichnis sowie im Tabellenverzeichnis
+\renewcommand{\cftfigpresnum}{Abb. }
+\renewcommand{\cfttabpresnum}{Tab. }
+\renewcommand{\cftfigaftersnum}{:}
+\renewcommand{\cfttabaftersnum}{:}
+\setlength{\cftfignumwidth}{2cm}
+\setlength{\cfttabnumwidth}{2cm}
+\setlength{\cftfigindent}{0cm}
+\setlength{\cfttabindent}{0cm}
+
+%%%%% Verzeichnisse aufrufen
+\pagenumbering{roman} % Römischen Ziffern
+%%%Aufruf Inhaltsverzeichnis
+%\tableofcontents
+%\newpage
+%%Aufruf Abbildungsverzeichnis
+%\listoffigures 
+%\newpage
+%%%%Aufruf Tabellenverzeichnis
+%\listoftables
+%\newpage
+%
+% \begin{abstract}
+% \end{abstract}
+
+%%%% Beginn der Arbeit
+\pagenumbering{arabic} % Umstellung auf Arabische Ziffern
+
+\input{Chapter1} %Have a .tex file with the name "Chapter1" etc
+\input{Chapter2}
+\input{Chapter3}
+\input{Chapter4}
+\input{Chapter5}
+\input{Chapter6}
+
+\label{Bibliography}
+\bibliography{bibliography}
+\appendix
+\input{appendix}
+
+%%% Eidesstattliche Erklärung
+\newpage
+\thispagestyle{empty}
+\section*{Eidesstattliche Erklärung}
+Ich versichere, dass ich die vorstehende Arbeit selbständig und ohne fremde Hilfe angefertigt und mich anderer als der im beigefügten Verzeichnis angegebenen Hilfsmittel nicht bedient habe. Alle Stellen, die wörtlich oder sinngemäß aus Veröffentlichungen übernommen wurden, sind als solche kenntlich gemacht. Alle Internetquellen sind der Arbeit beigefügt. Des Weiteren versichere ich, dass ich die Arbeit vorher nicht in einem anderen Prüfungsverfahren eingereicht habe und dass die eingereichte schriftliche Fassung der auf dem elektronischen Speichermedium entspricht.
+\\ \\ \\
+\begin{tabular}{lp{3em}l}
+	\hspace{5cm}   && \hspace{4cm} \\\cline{1-1}\cline{3-3}
+	Ort, Datum     && Unterschrift
+\end{tabular}
+
+\end{document}          
