@@ -6,3 +6,8 @@ Bellemare's writing guide: http://marcfbellemare.com/wordpress/wp-content/upload
 Uni Hamburg site with Latex template and more: https://www.wiso.uni-hamburg.de/en/fachbereich-sozoek/professuren/szimayer/teaching/theses/master-theses.html
   and another: https://www.bwl.uni-hamburg.de/en/iwi/studium/abschlussarbeiten.html
 
+The sample thesis .tex file is based on a Uni-Hamburg template, the source of which I cannot find anymore.
+
+The beamer .tex file comes from http://www.LaTeXTemplates.com
+  but I added the Metropolis package, because it's the best
+
